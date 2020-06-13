@@ -1,5 +1,4 @@
 name: Jekyll site CI
-uses: aquiladev/ipfs-action@v0.1.2
 
 on:
   push:
