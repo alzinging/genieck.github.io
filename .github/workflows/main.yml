@@ -8,9 +8,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  uses: aquiladev/ipfs-action@v1
-with:
-      path: ./
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,3 +19,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    uses: aquiladev/ipfs-action@v1
+      with:
+        path: ./
